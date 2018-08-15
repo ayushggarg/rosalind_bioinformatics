@@ -1,4 +1,5 @@
-map = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
+RNA_CODON_TABLE = {
+    "UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
     "UCU":"S", "UCC":"S", "UCA":"S", "UCG":"S",
     "UAU":"Y", "UAC":"Y", "UAA":"STOP", "UAG":"STOP",
     "UGU":"C", "UGC":"C", "UGA":"STOP", "UGG":"W",
@@ -17,7 +18,7 @@ map = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
 
 def codon_frequency():
 	frequencies = {}
-	for k,v in map.items():
+	for k,v in RNA_CODON_TABLE.items():
 		if v not in frequencies:
 			frequencies[v] = 0
 		frequencies[v] += 1
