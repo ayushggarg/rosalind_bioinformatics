@@ -1,4 +1,5 @@
-map = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
+RNA_CODON_TABLE = {
+    "UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",
     "UCU":"S", "UCC":"S", "UCA":"S", "UCG":"S",
     "UAU":"Y", "UAC":"Y", "UAA":"STOP", "UAG":"STOP",
     "UGU":"C", "UGC":"C", "UGA":"STOP", "UGG":"W",
@@ -24,8 +25,8 @@ file.close()
 prot = ""
 track = 0
 codon = data[track:track+3]
-while (map[codon] != "STOP"):
-    prot += map[codon]
+while (RNA_CODON_TABLE[codon] != "STOP"):
+    prot += RNA_CODON_TABLE[codon]
     track += 3
     codon = data[track:track+3]
 
