@@ -75,7 +75,6 @@ dna_comp = dna_comp[::-1]
 dna_start_seq = start_sequences(dna)
 dna_comp_start_seq = start_sequences (dna_comp)
 
-
 #print (dna_start_seq)
 #print (dna_comp_start_seq)
 #print ()
